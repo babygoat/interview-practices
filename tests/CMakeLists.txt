@@ -1,4 +1,4 @@
-set(UNIT_TEST_LIST insertion_sort)
+set(UNIT_TEST_LIST insertion_sort quick_sort)
 
 foreach (NAME IN LISTS UNIT_TEST_LIST)
     list(APPEND UNIT_TEST_SOURCE_LIST ${NAME}_test.cpp)
