@@ -6,7 +6,7 @@ endforeach ()
 
 set(TARGET_NAME tests)
 
-add_executable(${TARGET_NAME} main_test.cpp ${UNIT_TEST_SOURCE_LIST} merge_sort_test.cpp heap_sort_test.go.cpp)
+add_executable(${TARGET_NAME} main_test.cpp ${UNIT_TEST_SOURCE_LIST} merge_sort_test.cpp heap_sort_test.go.cpp  counting_sort_test.cpp)
 
 target_link_libraries(${TARGET_NAME} PUBLIC sorting)
 target_include_directories(${TARGET_NAME} PUBLIC ../lib/catch2/)
