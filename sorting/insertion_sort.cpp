@@ -14,9 +14,10 @@ namespace sorting {
     void InsertionSort(std::vector<int> &arr) {
         for (auto i = 1; i < arr.size(); i++) {
             for (auto j = i - 1; j >= 0; j--) {
-                if (arr[j] > arr[j + 1]) {
-                    std::swap(arr[j], arr[j + 1]);
+                if (arr[j] <= arr[j + 1]) {
+                    break;
                 }
+                std::swap(arr[j], arr[j + 1]);
             }
         }
     }
